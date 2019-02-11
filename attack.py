@@ -1,7 +1,11 @@
 #! /usr/bin/env python3
 
 
-import time, os
+import time, os, sys
+from socket import *
+from select import select
+
+
 pid = os.getpid()
 
 print("dummy attack program with pid %d.  do not trust my results" % pid)
